@@ -6,7 +6,6 @@
  */
 // Zapisuje rozwiązania układu w macierzy x
 int  backsubst(Matrix *x, Matrix *mat, Matrix *b) {
-				
 	if(mat->r != b->r) return 2;
 	int i, j;
 	double sum;
