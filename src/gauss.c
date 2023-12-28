@@ -5,10 +5,10 @@
  * Zwraca 1 - macierz osobliwa - dzielenie przez 0
  */
 int eliminate(Matrix *mat, Matrix *b){
-    /**
-  	 * Tutaj należy umieścić właściwą implemntację.
-		 */
+	/*
+	 * Tutaj należy umieścić właściwą implemntację.
+	 */
 
-		return 0;
+	return 0;
 }
 
