@@ -17,9 +17,17 @@ int main(int argc, char ** argv) {
 	printToScreen(b);
 
 	res = eliminate(A,b);
+	if (res != 0) {
+		fprintf(stderr, "Błąd, macierz osobliwa\n");
+		return res;
+	}
 	x = createMatrix(b->r, 1);
 	if (x != NULL) {
 		res = backsubst(x,A,b);
+		if (res != 0) {
+			fprintf(stderr, "Błąd podstawiania macierzy\n");
+			return res;
+		}
 		printToScreen(x);
 		freeMatrix(x);
 	} else {
